@@ -1,0 +1,11 @@
+College_Name,Location,Ranking,Acceptance_Rate,Avg_GRE,Avg_TOEFL,Avg_CGPA,Min_CGPA
+MIT,Cambridge MA USA,1,0.07,335,115,9.6,9.0
+Stanford University,Stanford CA USA,2,0.04,334,114,9.6,9.0
+UC Berkeley,Berkeley CA USA,3,0.17,328,110,9.2,8.5
+Georgia Tech,Atlanta GA USA,6,0.21,325,108,9.0,8.3
+University of Michigan,Ann Arbor MI USA,8,0.23,324,106,8.9,8.2
+UCLA,Los Angeles CA USA,10,0.24,323,105,8.8,8.0
+Purdue University,West Lafayette IN USA,14,0.31,320,103,8.5,7.8
+ASU Tempe,Tempe AZ USA,25,0.55,315,98,8.0,7.0
+UT Dallas,Richardson TX USA,30,0.52,314,97,7.9,7.0
+University at Buffalo, Buffalo NY USA,35,0.57,312,95,7.7,6.8

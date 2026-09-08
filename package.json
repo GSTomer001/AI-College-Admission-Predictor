@@ -1,0 +1,18 @@
+{
+  "name": "ai-college-admission-predictor",
+  "version": "1.0.0",
+  "description": "Full-stack AI College Admission Predictor (React + Node/Express + Python ML)",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "train-model": "python ai-model/train.py",
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "ai": "python ai-model/app.py",
+    "dev": "concurrently -n AI,SERVER,CLIENT -c blue,green,magenta \"npm run ai\" \"npm run server\" \"npm run client\"",
+    "seed": "npm run seed --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

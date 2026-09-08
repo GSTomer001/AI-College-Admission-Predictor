@@ -1,0 +1,29 @@
+﻿=== starting AI/ML flask service (port 5001) ===
+=== starting backend (port 5000) ===
+=== starting frontend vite dev server (port 5173) ===
+
+############ E2E TESTS ############
+--- [1] AI model health ---
+{"modelReady":true,"status":"ok"}
+--- [2] AI model direct prediction ---
+{"chanceOfAdmit":0.7081}
+--- [3] Backend API health ---
+{"status":"ok","uptime":176.5814154}
+--- [4] Register user ---
+registered: id=6a9f7e300294ca68a76c713f, tokenReceived=True
+--- [5] Login user ---
+login ok: name=Test Student
+--- [6] GET /api/auth/me (protected) ---
+{"_id":"6a9f7e300294ca68a76c713f","name":"Test Student","email":"test@student.com","role":"student"}
+--- [7] GET /api/colleges (auto-seeded) ---
+colleges count: 10 | first: ASU Tempe
+--- [8] POST /api/predictions (ML prediction via backend) ---
+chanceOfAdmit=0.7081 | source=model | matches=8
+top match: Georgia Tech (fit 94/100)
+--- [9] GET /api/predictions (history) ---
+history entries: 1
+--- [10] Validation check (bad GRE should fail 422) ---
+correctly rejected: status=422
+--- [11] Frontend serves HTML ---
+FAIL: Unable to connect to the remote server
+############ E2E DONE ############

@@ -1,0 +1,7 @@
+﻿=== killing AI flask service on port 5001 ===
+AI service stopped
+=== POST /api/predictions with AI service DOWN (expect source=heuristic) ===
+chanceOfAdmit=0.73 | source=heuristic
+=== restarting AI flask service ===
+AI service restarted: True
+=== DONE ===
