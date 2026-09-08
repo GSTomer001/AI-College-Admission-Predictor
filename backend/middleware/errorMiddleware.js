@@ -1,5 +1,5 @@
 /** Final error handler — converts thrown errors into JSON responses. */
-function errorHandler(err, req, res, next) { // eslint-disable-line no-unused-vars
+function errorHandler(err, req, res, next) {
   const status = err.status || (err.name === "ValidationError" ? 400 : err.statusCode) || 500;
   const message =
     err.status || err.statusCode || err.name === "ValidationError"

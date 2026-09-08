@@ -1,4 +1,6 @@
-"""Train the admission chance model and save it (plus the scaler) to disk."""
+"""
+Train the admission chance model and save it (plus the scaler) to disk.
+"""
 import os
 
 import joblib
@@ -12,7 +14,6 @@ from sklearn.preprocessing import StandardScaler
 from preprocessing.preprocess import (
     DATA_DIR,
     MODELS_DIR,
-    CSV_COLUMNS,
     load_training_data,
     save_scaler,
 )

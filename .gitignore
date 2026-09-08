@@ -24,7 +24,8 @@ ai-model/models/*.pkl
 .DS_Store
 
 # IDE
-.vscode/
+.vscode/*
+!.vscode/settings.json
 .idea/
 
 # Local scratch / temp outputs
@@ -32,4 +33,10 @@ ai-model/models/*.pkl
 *_out2.txt
 *_out3.txt
 check_env_out.txt
+
+
+# Audit / lint scratch
+eslint_full.txt
+lint_result.txt
+*_out.txt
 

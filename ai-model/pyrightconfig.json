@@ -1,0 +1,7 @@
+{
+  "include": ["."],
+  "typeCheckingMode": "off",
+  "reportMissingImports": false,
+  "reportMissingModuleSource": false,
+  "reportAttributeAccessIssue": false
+}
