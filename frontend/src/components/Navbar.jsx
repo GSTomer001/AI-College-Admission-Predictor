@@ -1,5 +1,6 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
+import { IS_DEMO } from "../services/demoEngine.js";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -14,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">🎓 AdmissionPredictor</Link>
+      <Link to="/" className="logo">🎓 AdmissionPredictor {IS_DEMO && <span className="pill">DEMO</span>}</Link>
       <ul className="nav-links">
         <li><NavLink to="/" end className={linkClass}>Home</NavLink></li>
         <li><NavLink to="/predictor" className={linkClass}>Predictor</NavLink></li>
@@ -38,3 +39,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

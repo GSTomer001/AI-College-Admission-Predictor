@@ -1,5 +1,11 @@
 # AI College Admission Predictor 🎓
 
+> **🌐 Live Demo: [https://gstomer001.github.io/AI-College-Admission-Predictor/](https://gstomer001.github.io/AI-College-Admission-Predictor/)**
+>
+> The live demo runs the *same trained ML model* directly in your browser
+> (deployed via GitHub Actions). Auth/predictions are stored locally per browser.
+> For the full stack (Express API + MongoDB), follow the setup below.
+
 A full-stack application that predicts a student's chance of admission to universities and recommends matching colleges using a Machine Learning model.
 
 ## Architecture
@@ -47,6 +53,10 @@ npm run install:all
 pip install -r ai-model/requirements.txt
 npm run train-model   # creates ai-model/models/admission_model.pkl & scaler.pkl
 ```
+
+> `python ai-model/export_model.py` additionally exports the trained model to
+> `frontend/public/model.json` — this powers the browser-side ML in the
+> GitHub Pages demo build (`npm run build:demo`).
 
 ### 3. Configure environment
 

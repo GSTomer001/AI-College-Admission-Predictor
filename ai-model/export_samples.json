@@ -1,0 +1,134 @@
+[
+  {
+    "input": {
+      "gre": 320,
+      "toefl": 110,
+      "rating": 4,
+      "sop": 4.5,
+      "lor": 4.5,
+      "cgpa": 9.0,
+      "research": 1
+    },
+    "expected": 0.70814176
+  },
+  {
+    "input": {
+      "gre": 300,
+      "toefl": 95,
+      "rating": 2,
+      "sop": 2.5,
+      "lor": 3.0,
+      "cgpa": 7.2,
+      "research": 0
+    },
+    "expected": 0.28136727
+  },
+  {
+    "input": {
+      "gre": 340,
+      "toefl": 120,
+      "rating": 5,
+      "sop": 5.0,
+      "lor": 5.0,
+      "cgpa": 9.8,
+      "research": 1
+    },
+    "expected": 0.92305384
+  },
+  {
+    "input": {
+      "gre": 338,
+      "toefl": 109,
+      "rating": 4,
+      "sop": 4.1,
+      "lor": 1.9,
+      "cgpa": 7.2,
+      "research": 1
+    },
+    "expected": 0.62198655
+  },
+  {
+    "input": {
+      "gre": 304,
+      "toefl": 117,
+      "rating": 5,
+      "sop": 4.3,
+      "lor": 4.2,
+      "cgpa": 7.87,
+      "research": 0
+    },
+    "expected": 0.54430777
+  },
+  {
+    "input": {
+      "gre": 331,
+      "toefl": 99,
+      "rating": 2,
+      "sop": 2.0,
+      "lor": 2.8,
+      "cgpa": 8.02,
+      "research": 0
+    },
+    "expected": 0.48929852
+  },
+  {
+    "input": {
+      "gre": 319,
+      "toefl": 107,
+      "rating": 3,
+      "sop": 4.2,
+      "lor": 3.5,
+      "cgpa": 9.96,
+      "research": 1
+    },
+    "expected": 0.65885035
+  },
+  {
+    "input": {
+      "gre": 313,
+      "toefl": 96,
+      "rating": 5,
+      "sop": 3.5,
+      "lor": 1.2,
+      "cgpa": 6.14,
+      "research": 0
+    },
+    "expected": 0.34045227
+  },
+  {
+    "input": {
+      "gre": 297,
+      "toefl": 105,
+      "rating": 5,
+      "sop": 4.7,
+      "lor": 3.5,
+      "cgpa": 8.06,
+      "research": 0
+    },
+    "expected": 0.43710336
+  },
+  {
+    "input": {
+      "gre": 303,
+      "toefl": 105,
+      "rating": 2,
+      "sop": 1.0,
+      "lor": 1.8,
+      "cgpa": 8.77,
+      "research": 0
+    },
+    "expected": 0.32292931
+  },
+  {
+    "input": {
+      "gre": 334,
+      "toefl": 96,
+      "rating": 4,
+      "sop": 1.0,
+      "lor": 4.3,
+      "cgpa": 6.62,
+      "research": 0
+    },
+    "expected": 0.50064398
+  }
+]

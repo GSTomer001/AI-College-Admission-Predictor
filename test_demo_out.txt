@@ -1,0 +1,49 @@
+﻿=== JS inference test (model.json vs sklearn samples) ===
+powershell : node : node:fs:484
+At line:1 char:1
++ powershell -NoProfile -ExecutionPolicy Bypass -File "c:\Users\Hp\OneD ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node : node:fs:484:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+At C:\Users\Hp\OneDrive\Desktop\projects\AI-College-Admition-predictor\test_demo.ps1:6 char:1
++ node test_model.mjs 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node:fs:484:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+Error: ENOENT: no such file or directory, open 
+'C:\Users\Hp\OneDrive\Desktop\projects\frontend\public\model.json'
+    at readFileSync (node:fs:484:20)
+    at 
+file:///C:/Users/Hp/OneDrive/Desktop/projects/AI-College-Admition-predictor/test_model.mjs:5:26
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Hp\\OneDrive\\Desktop\\projects\\frontend\\public\\model.json'
+}
+Node.js v24.19.0
+=== demo build ===
+> admission-predictor-frontend@1.0.0 build:demo
+> vite build --mode demo
+
+[36mvite v5.4.21 [32mbuilding for demo...[36m[39m
+transforming...
+[32mΓ£ô[39m 114 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.43 kB[22m[1m[22m[2m Γöé gzip:  0.29 kB[22m
+[2mdist/[22m[35massets/index-CVK2XnkS.css  [39m[1m[2m  3.70 kB[22m[1m[22m[2m Γöé gzip:  1.31 kB[22m
+[2mdist/[22m[36massets/index-DgN7R1sN.js   [39m[1m[2m240.90 kB[22m[1m[22m[2m Γöé gzip: 79.65 kB[22m
+[32mΓ£ô built in 2.54s[39m
+=== dist contents ===
+\index.html  (0.4 KB)
+\model.json  (138.3 KB)
+\assets\index-CVK2XnkS.css  (3.6 KB)
+\assets\index-DgN7R1sN.js  (235.3 KB)
+=== DONE ===

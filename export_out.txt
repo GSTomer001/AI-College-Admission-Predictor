@@ -1,0 +1,2 @@
+﻿Verified 11 samples against sklearn (max diff < 1e-6).
+Exported 300 trees -> C:\Users\Hp\OneDrive\Desktop\projects\AI-College-Admition-predictor\frontend\public\model.json (138.3 KB)
